@@ -120,6 +120,8 @@ cos_theta_i = np.cos(zen)*np.cos(beta) + np.sin(zen)*np.sin(beta)*np.cos(gamma_s
 POA_beam = DNI * cos_theta_i
 POA_beam = np.clip(DNI * cos_theta_i, 0, None) # helps ensure energy yield is not negative
 
+# Source: Solar Engineering of Thermal Processes, Photovoltaics and Wind by John A. Duffie & William A. Beckman
+
 # Liu & Jordan isotropic diffuse model
 # Used to estimate the diffuse sky on a tilted surface (assumes sky is uniform in composition)
 # POA = Plane of Array
